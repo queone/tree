@@ -12,7 +12,7 @@ import (
 
 const (
 	program_name    = "tree"
-	program_version = "0.9.4"
+	program_version = "1.0.0"
 )
 
 func printUsage() {

@@ -19,15 +19,13 @@ To compile, clone this repository and run:
 ./build_go
 ```
 
-This version maintains the essential information while being more concise and easier to read for advanced users.
-
 
 ## Usage
 
 ```bash
 $ tree -?
 
-tree v0.9.2
+tree v1.0.0
 Directory tree printer - https://github.com/queone/tree
 Usage:
   tree [options] [directory]
