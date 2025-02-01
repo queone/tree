@@ -157,6 +157,11 @@ func main() {
 
 	args := os.Args[1:]
 	if len(args) > 0 {
+		// Process command-line arguments in a loop to handle options and directory input.
+		// This approach allows for flexible argument ordering, enabling options to be specified
+		// before or after the directory. The loop iterates through each argument, setting flags
+		// or updating the directory variable as appropriate, ensuring that the last specified
+		// directory is used if multiple are provided.
 		for _, arg := range args {
 			if arg == "-?" || arg == "--help" || arg == "-h" {
 				printUsage()
