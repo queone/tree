@@ -12,7 +12,7 @@ import (
 
 const (
 	program_name    = "tree"
-	program_version = "0.9.3"
+	program_version = "0.9.4"
 )
 
 func printUsage() {
@@ -48,9 +48,10 @@ func printUsage() {
 	lines := strings.Split(strings.ReplaceAll(usage, "\t", "  "), "\n")
 
 	// Dedent each line by the specified number of spaces
+	dedent := 2 // Number of spaces to indent/dedent
 	for i := range lines {
-		if len(lines[i]) >= 2 {
-			lines[i] = lines[i][2:]
+		if len(lines[i]) >= dedent {
+			lines[i] = lines[i][dedent:]
 		}
 	}
 
