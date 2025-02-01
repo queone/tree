@@ -6,10 +6,10 @@ A lightweight directory tree printing utility.
 
 Why another tree utility??
 
-**Availability**: If the official tree utility is not installed or hard to get, you can quickly compile this with Go.
-**Cross-Platform**: Easily compile on Linux, Mac, or Windows.
-**Simplicity**: Covers 99% of typical use cases with a minimal feature set.
-**Learning Opportunity**: A great way to practice coding in Go.
+- **Availability**: If the official tree utility is not installed or hard to get, you can quickly compile this with Go.
+- **Cross-Platform**: Easily compile on Linux, Mac, or Windows.
+- **Simplicity**: Covers 99% of typical use cases with a minimal feature set.
+- **Learning Opportunity**: A great way to practice coding in Go.
 
 
 ## Getting Started
