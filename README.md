@@ -27,12 +27,13 @@ This version maintains the essential information while being more concise and ea
 ```bash
 $ tree -?
 
-tree v0.9.1
+tree v0.9.2
 Directory tree printer - https://github.com/queone/tree
 Usage:
   tree [options] [directory]
 
-  Options can be specified in any order. The last specified directory will be used if multiple directories are provided.
+  Options can be specified in any order. The last specified directory will be used if
+  multiple directories are provided.
 
 Options:
   -f                 Show full file paths. Can be placed before or after the directory path.
