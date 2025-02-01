@@ -12,7 +12,7 @@ import (
 
 const (
 	program_name    = "tree"
-	program_version = "0.9.1"
+	program_version = "0.9.2"
 )
 
 func printUsage() {
@@ -30,7 +30,8 @@ func printUsage() {
 	Usage:
 		%s [options] [directory]
 	
-		Options can be specified in any order. The last specified directory will be used if multiple directories are provided.
+		Options can be specified in any order. The last specified directory will be used if
+		multiple directories are provided.
 
 	Options:
 		-f                 Show full file paths. Can be placed before or after the directory path.
