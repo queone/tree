@@ -12,7 +12,7 @@ import (
 
 const (
 	program_name    = "tree"
-	program_version = "0.9.2"
+	program_version = "0.9.3"
 )
 
 func printUsage() {
@@ -34,7 +34,7 @@ func printUsage() {
 		multiple directories are provided.
 
 	Options:
-		-f                 Show full file paths. Can be placed before or after the directory path.
+		-f                 Show full file paths. Can be placed before or after the dir path.
 		-?, --help, -h     Show this help message and exit
 
 	Examples:
