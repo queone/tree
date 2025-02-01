@@ -12,7 +12,7 @@ import (
 
 const (
 	program_name    = "tree"
-	program_version = "0.9.0"
+	program_version = "0.9.1"
 )
 
 func printUsage() {
@@ -30,10 +30,10 @@ func printUsage() {
 	Usage:
 		%s [options] [directory]
 	
-		If no directory is provided, the current directory (".") is used.
+		Options can be specified in any order. The last specified directory will be used if multiple directories are provided.
 
 	Options:
-		-f                 Show full file paths. Can be placed after dir path.
+		-f                 Show full file paths. Can be placed before or after the directory path.
 		-?, --help, -h     Show this help message and exit
 
 	Examples:
