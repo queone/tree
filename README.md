@@ -1,8 +1,8 @@
-# tree
+## tree
 
 A lightweight directory tree printing utility.
 
-## Why?
+### Why?
 
 Why another tree utility??
 
@@ -12,20 +12,19 @@ Why another tree utility??
 - **Learning Opportunity**: A great way to practice coding in Go.
 
 
-## Getting Started
+### Getting Started
 
 To compile, clone this repository and run:
 ```bash
 ./build_go
 ```
 
-
-## Usage
+### Usage
 
 ```bash
 $ tree -?
 
-tree v1.0.0
+tree v1.0.1
 Directory tree printer - https://github.com/queone/tree
 Usage:
   tree [options] [directory]

@@ -12,50 +12,32 @@ import (
 
 const (
 	program_name    = "tree"
-	program_version = "1.0.0"
+	program_version = "1.0.1"
 )
 
 func printUsage() {
 	n := utl.Yel(program_name)
 	v := program_version
-
-	// Reminder: Use tabs for each line in the usage string literal.
-	// This allows the following code to replace tabs with spaces and
-	// dedent each line appropriately, ensuring consistent indentation.
-	// Without using tabs, lines would need to start at column 0, which
-	// makes for ugly code.
-	usage := fmt.Sprintf(`
-	%s v%s
-	Directory tree printer - https://github.com/queone/tree
-	Usage:
-		%s [options] [directory]
-	
-		Options can be specified in any order. The last specified directory will be used if
-		multiple directories are provided.
-
-	Options:
-		-f                 Show full file paths. Can be placed before or after the dir path.
-		-?, --help, -h     Show this help message and exit
-
-	Examples:
-		%s 
-		%s -f /path/to/directory
-		%s /path/to/directory -f
-		%s -h
-	`, n, v, n, n, n, n, n)
-
-	// Replace tabs with the specified number of spaces and split into lines
-	lines := strings.Split(strings.ReplaceAll(usage, "\t", "  "), "\n")
-
-	// Dedent each line by the specified number of spaces
-	dedent := 2 // Number of spaces to indent/dedent
-	for i := range lines {
-		if len(lines[i]) >= dedent {
-			lines[i] = lines[i][dedent:]
-		}
-	}
-
-	fmt.Println(strings.Join(lines, "\n")) // Return the joined back lines
+	usage := fmt.Sprintf("%s v%s\n"+
+		"Directory tree printer — https://github.com/queone/tree\n"+
+		"======================\n"+
+		"Usage:\n"+
+		"  %s [options] [directory]\n"+
+		"\n"+
+		"  Options can be specified in any order. The last specified directory will be used if\n"+
+		"  multiple directories are provided.\n"+
+		"\n"+
+		"Options:\n"+
+		"  -f                Show full file paths. Can be placed before or after the dir path.\n"+
+		"  -?, --help, -h    Show this help message and exit\n"+
+		"\n"+
+		"Examples:\n"+
+		"  %s\n"+
+		"  %s -f /path/to/directory\n"+
+		"  %s /path/to/directory -f\n"+
+		"  %s -h\n",
+		n, v, n, n, n, n, n)
+	fmt.Print(usage)
 	os.Exit(0)
 }
 
@@ -155,7 +137,6 @@ func printTree(dir string, showFullPath bool) {
 func main() {
 	showFullPath := false
 	var dir string = "."
-
 	args := os.Args[1:]
 	if len(args) > 0 {
 		// Process command-line arguments in a loop to handle options and directory input.
@@ -173,6 +154,5 @@ func main() {
 			}
 		}
 	}
-
 	printTree(dir, showFullPath)
 }
