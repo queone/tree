@@ -21,22 +21,22 @@ func printUsage() {
 	usage := fmt.Sprintf("%s v%s\n"+
 		"Directory tree printer — https://github.com/queone/tree\n"+
 		"======================\n"+
-		"Usage:\n"+
+		"%s\n"+
 		"  %s [options] [directory]\n"+
 		"\n"+
 		"  Options can be specified in any order. The last specified directory will be used if\n"+
 		"  multiple directories are provided.\n"+
 		"\n"+
-		"Options:\n"+
+		"%s\n"+
 		"  -f                Show full file paths. Can be placed before or after the dir path.\n"+
 		"  -?, --help, -h    Show this help message and exit\n"+
 		"\n"+
-		"Examples:\n"+
+		"%s\n"+
 		"  %s\n"+
 		"  %s -f /path/to/directory\n"+
 		"  %s /path/to/directory -f\n"+
 		"  %s -h\n",
-		n, v, n, n, n, n, n)
+		n, v, utl.Yel("Usage"), n, utl.Yel("Options"), utl.Yel("Examples"), n, n, n, n)
 	fmt.Print(usage)
 	os.Exit(0)
 }
