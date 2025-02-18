@@ -1,8 +1,17 @@
 ## Releases
 
 
-### 1.0.1
+### 1.0.2
+Release Date: 2025-feb-18
 
+- Updated colors in `printUsage()` to bright white `utl.Whi2()`
+- Upgraded to new `build_go`
+- Updated dependencies:
+  - <github.com/queone/utl> v1.3.0
+
+---
+
+### 1.0.1
 Release Date: 2025-feb-15
 
 - Updated `printUsage()` style and details
@@ -10,7 +19,6 @@ Release Date: 2025-feb-15
 ---
 
 ### 1.0.0
-
 Release Date: 2025-feb-01
 
 - Initial release

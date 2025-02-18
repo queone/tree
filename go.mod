@@ -1,10 +1,8 @@
 module tree
 
-go 1.23
+go 1.24
 
-toolchain go1.23.5
-
-require github.com/queone/utl v1.2.0
+require github.com/queone/utl v1.3.0
 
 require (
 	github.com/fatih/color v1.10.0 // indirect

@@ -12,15 +12,14 @@ import (
 
 const (
 	program_name    = "tree"
-	program_version = "1.0.1"
+	program_version = "1.0.2"
 )
 
 func printUsage() {
-	n := utl.Yel(program_name)
+	n := utl.Whi2(program_name)
 	v := program_version
 	usage := fmt.Sprintf("%s v%s\n"+
 		"Directory tree printer — https://github.com/queone/tree\n"+
-		"======================\n"+
 		"%s\n"+
 		"  %s [options] [directory]\n"+
 		"\n"+
@@ -36,7 +35,7 @@ func printUsage() {
 		"  %s -f /path/to/directory\n"+
 		"  %s /path/to/directory -f\n"+
 		"  %s -h\n",
-		n, v, utl.Yel("Usage"), n, utl.Yel("Options"), utl.Yel("Examples"), n, n, n, n)
+		n, v, utl.Whi2("Usage"), n, utl.Whi2("Options"), utl.Whi2("Examples"), n, n, n, n)
 	fmt.Print(usage)
 	os.Exit(0)
 }
